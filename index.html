@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Assignment</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <nav class="flex align-center">
+        
+        <p><span>Library</span> System</p>
+        <ul>
+          <li class="big-screens">
+            <a href="#bkd">Books</a>
+            <a href="#registration-form">Register</a>
+            <a href="#">Contact Us</a>
+            <button class="btn register">LogOut</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="books">
+        <span id="bkd">Books</span>
+         <div class="book">
+
+            <table class="tablestyle" border="1" cellspacing="0" width="1000px">
+                <tr>
+                    <th>Book Id</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td >Book Title 1 </td>
+                    <td>author name1</td>
+                    <td>gen1</td>
+                    <td>av1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Book Title 2</td>
+                    <td>author name2</td>
+                    <td>gen2</td>
+                    <td>av2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Book Title 3</td>
+                    <td>author name3</td>
+                    <td>gen3</td>
+                    <td>av3</td>
+                </tr>
+            </table>
+
+         </div>
+      </div>
+      <section>
+        <div class="container">
+            <form id="registration-form">
+              <h2>Registration Form</h2>
+              <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+              </div>
+              <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="5" max="100" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </section>
+</body>
+</html>
